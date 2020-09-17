@@ -1,0 +1,256 @@
+body {
+	margin: auto 0;
+	display: block;
+	font-family: "Lato", sans-serif, "Noto Sans TC", sans-serif;
+}
+
+/*Nav Bar*/
+@media only screen and (max-width: 600px) {
+	.mainnav {
+		margin: 0;
+	}
+}
+.first {
+	height: 6em;
+	z-index: 1;
+	width: 100%;
+	margin: 0;
+}
+#navbar {
+	transition: 0.5s;
+}
+.navwidth{
+	padding: 0 10%;
+}
+.navlist {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+}
+
+.li-img {
+	height: 4em;
+}
+.li-img:hover {
+	transform: scale(1.1);
+	filter: drop-shadow(2px 2px 1px grey);
+	transition: all 0.7s ease;
+}
+.li-logo {
+	width: 2em;
+	margin: 0.5em;
+}
+.li-logo:hover {
+	transform: scale(1.1);
+	filter: drop-shadow(2px 2px 1px grey);
+	transition: all 0.7s ease;
+}
+.push {
+	margin-right: auto;
+}
+.sticky	{
+	position: fixed;
+	top: 0;
+}
+
+
+/*Front Img*/
+.second {
+	height: 100vh;
+	background-image: url("pro.png");
+	background-size: cover;
+    background-position: 80%;
+    width: 100%;
+    z-index: -1;
+}
+.center{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.wrapperimg{
+	max-height: 30vh;
+	width:auto;
+	filter: drop-shadow(0px 35px 10px rgb(200,200,200,0.3));
+	margin: 0;
+	overflow:hidden;
+}
+.wrappertextstyle{
+	color: white;
+	font-weight: normal;
+	filter: drop-shadow(0px 10px 5px rgb(200,200,200,0.5));
+	margin: 0;
+	font-size: 8vh;
+}
+.height {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: flex-end;
+}
+.white {
+	width: 100%;
+	height: 10vh;
+	background-image: linear-gradient(180deg, rgb(0,0,0,0), white);
+}
+/*CV*/
+.third {
+	max-height: 85em;
+	display: flex;
+	position: relative;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 0;
+}
+.CV {
+	max-height: 85em;
+	width: 70em;
+	overflow:hidden;
+}
+
+/*Accomplishments*/
+.forthbackground {
+	background-color: rgba(200,200,200,0.5);
+	z-index: -1;
+}
+.forth {
+	margin: 0 15vh; 
+}
+.heightadj {
+	height: 23vh;
+}
+.accomtext {
+	color: rgba(200,200,200,0.5);
+	text-align: center;
+	font-weight: lighter;
+	font-size: 5vh;
+	z-index: 0;
+}
+.textback {
+	height: 10vh;
+	width: 30vh;
+	background-color: white;;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	z-index: -0.5;
+}
+.accomgrip {
+	width: 100%;
+	display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+	grid-gap: 3vh;
+	justify-content: center;
+    align-items: center;
+}
+.accomimgfade{
+	transition: all 0.5s;
+}
+.accomimgfade:hover {
+	transform: scale(1.03);
+    opacity: 0.8;
+}
+.accomimg001 {
+	grid-column: 7 / span 4;
+    grid-row: 1 / span 2;
+}
+.accomimg002 {
+	grid-column: 1 / span 6;
+    grid-row: 1 / span 2;
+}
+.accomimg003 {
+	grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+}
+.accomimg004 {
+	grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+.accomimg005 {
+	grid-column: 3 / span 6;
+    grid-row: 3 / span 2;
+}
+.accomimg006 {
+	grid-column: 9 / span 2;
+    grid-row: 3 / span 3;
+}
+.accomimg007 {
+	grid-column: 3 / span 6;
+    grid-row: 5 / span 2;
+    align-self: end;
+}
+.accomimg008 {
+	grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+}
+.accomimg009 {
+	grid-column: 9 / span 2;
+    grid-row: 6 / span 1;
+}
+.accomimg {
+	width: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: grey;
+	color: white;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	width: 120px;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.spare-10 {
+	height: 5vh;
+}
+
+/*Rooter*/
+.fifth {
+	margin-top: 3vh;
+	height: 30vh;
+}
+.rooterheight {
+	height: 30vh;
+}
+.rootercontainer {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+}
+.rootingimg {
+	border: 3px solid white;
+	border-radius: 100px;
+	padding: 1px;
+	width: 10vh;
+	box-shadow: 1px 1px grey;
+}
+.spare {
+	height: 2vh;
+}
+.rootertext {
+	color: white;
+	text-shadow: 1px 1px grey;
+}
