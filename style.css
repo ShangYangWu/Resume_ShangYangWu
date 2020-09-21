@@ -230,25 +230,15 @@ body {
 /*Rooter*/
 .fifth {
 	margin-top: 3vh;
-	height: 30vh;
+	height: 20vh;
 }
 .rooterheight {
-	height: 30vh;
+	height: 20vh;
 }
 .rootercontainer {
 	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
-}
-.rootingimg {
-	border: 3px solid white;
-	border-radius: 100px;
-	padding: 1px;
-	width: 10vh;
-	box-shadow: 1px 1px grey;
-}
-.spare {
-	height: 2vh;
 }
 .rootertext {
 	color: white;
